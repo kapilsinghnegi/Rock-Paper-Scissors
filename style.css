@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #001524;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#game h1 {
+  color: #fcbf49;
+  font-size: 2.5rem;
+  margin: 1rem;
+  user-select: none;
+  text-align: center;
+}
+
+#game h4 {
+  color: #edf2f4;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#game h2 {
+  color: #12b2ca;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+#game .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5rem;
+}
+
+#game #scoreBoard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 1.2rem;
+}
+
+#scoreBoard h2 {
+  color: #12b2ca;
+  font-size: 1.5rem;
+  margin: -0.5rem 0 0.5rem;
+}
+
+#scoreBoard div {
+  background-color: #023047;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  gap: 10px;
+  margin-bottom: 0.2rem;
+  height: 100%;
+  width: 100%;
+}
+
+#scoreBoard p {
+  color: #edf2f4;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#scoreBoard span {
+  color: #fb8500;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 40% 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+}
+
+.buttons .sign {
+  padding: 1rem 1rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #12b2ca;
+  background-color: #023047;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #06acff;
+  transform: scale(0.95);
+  color: #000000;
+}
+
+#result {
+  color: #edf2f4;
+  font-size: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#result h2 {
+  color: #fcbf49;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+#result p {
+  color: #edf2f4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#result button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #12b2ca;
+  background-color: #023047;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#result button:hover {
+  background-color: #06acff;
+  color: #000000;
+}
+
+#result button:active {
+  background-color: #fcbf49;
+}
+
+.selected {
+  background-color: green !important;
+}
