@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div id="game">
+      <h1>Rock Paper Scissors</h1>
+      <h4>The first to win 5 rounds wins the game.</h4>
+      <div class="container">
+        <div class="choices">
+          <div class="userChoice">
+            <h2>Your choice:</h2>
+            <div class="buttons">
+              <button id="rock1" class="sign">✊</button>
+              <button id="paper1" class="sign">✋</button>
+              <button id="scissors1" class="sign">✌</button>
+            </div>
+          </div>
+          <div class="computerChoice">
+            <h2>Computer's choice:</h2>
+            <div class="buttons">
+              <button id="rock2" class="sign">✊</button>
+              <button id="paper2" class="sign">✋</button>
+              <button id="scissors2" class="sign">✌</button>
+            </div>
+          </div>
+        </div>
+        <div id="scoreBoard">
+          <h2>Scores:</h2>
+          <div class="score">
+            <p>Player's Score: <br /><span id="humanScore">0</span></p>
+          </div>
+          <div class="score">
+            <p>Computer's Score: <br /><span id="computerScore">0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="result">
+      <h2>Results</h2>
+      <p id="roundWinner">Make a choice, start the game!</p>
+      <button id="playAgain">Play Again</button>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
